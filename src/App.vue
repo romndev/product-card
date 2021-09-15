@@ -1,15 +1,20 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="pug">
+ProductCard(:product="product")
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProductCard from './components/ProductCard.vue';
+import product from '@/assets/data.json';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ProductCard,
+  },
+  setup(){
+    return{
+      product,
+    }
   }
 }
 </script>
@@ -21,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
