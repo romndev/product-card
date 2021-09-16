@@ -1,5 +1,9 @@
 # product-card
 
+## Demo
+https://romndev.github.io/product-card/dist/
+
+
 ## Project setup
 ```
 yarn install
