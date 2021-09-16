@@ -3,7 +3,7 @@ ProductCard(:product="product")
 </template>
 
 <script>
-import ProductCard from './components/ProductCard.vue';
+import ProductCard from '@/components/ProductCard.vue';
 import product from '@/assets/data.json';
 
 export default {
@@ -21,10 +21,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  justify-content: center;
 }
 </style>

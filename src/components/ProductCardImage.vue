@@ -17,8 +17,6 @@
 import SwiperCore, {
   Pagination
 } from 'swiper';
-
-// install Swiper modules
 SwiperCore.use([Pagination]);
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -70,7 +68,6 @@ $imageHeight: 300px;
 .product-card-image{
   width:$imageWidth;
   height:$imageHeight;
-  border: 1px solid;
 
   .swiper-slide {
     background-position: center;

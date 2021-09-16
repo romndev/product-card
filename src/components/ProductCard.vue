@@ -1,7 +1,7 @@
 <template lang="pug">
 .product-card
   ProductCardImage(:images="product.images")
-  ProductCardBody
+  ProductCardBody(:product="product")
 </template>
 
 <script>
@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+.product-card{
+  width: 300px;
+}
 h3 {
   margin: 40px 0 0;
 }
